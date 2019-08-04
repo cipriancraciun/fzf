@@ -1471,3 +1471,9 @@ func ParseOptions() *Options {
 	postProcessOptions(opts)
 	return opts
 }
+
+func DefaultOptions() *Options {
+	opts := defaultOptions()
+	postProcessOptions(opts)
+	return opts
+}
