@@ -29,7 +29,7 @@ var activeTempFiles []string
 const ellipsis string = ".."
 const clearCode string = "\x1b[2J"
 
-func init() {
+func InitTerminal() {
 	placeholder = regexp.MustCompile(`\\?(?:{[+sf]*[0-9,-.]*}|{q}|{\+?f?nf?})`)
 	numericPrefix = regexp.MustCompile(`^[[:punct:]]*([0-9]+)`)
 	whiteSuffix = regexp.MustCompile(`\s*$`)

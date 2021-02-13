@@ -84,7 +84,7 @@ func toAnsiString(color tui.Color, offset int) string {
 
 var ansiRegex *regexp.Regexp
 
-func init() {
+func InitAnsi() {
 	/*
 		References:
 		- https://github.com/gnachman/iTerm2

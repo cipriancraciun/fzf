@@ -67,7 +67,7 @@ var (
 	_cache        ChunkCache
 )
 
-func init() {
+func InitPattern() {
 	_splitRegex = regexp.MustCompile(" +")
 	clearPatternCache()
 	clearChunkCache()

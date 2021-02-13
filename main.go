@@ -10,5 +10,6 @@ var revision string = "devel"
 
 func main() {
 	protector.Protect()
+	fzf.Init()
 	fzf.Run(fzf.ParseOptions(), version, revision)
 }

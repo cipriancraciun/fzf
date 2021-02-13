@@ -31,6 +31,7 @@ import (
 	"time"
 
 	"github.com/junegunn/fzf/src/util"
+	"github.com/junegunn/fzf/src/tui"
 )
 
 /*
@@ -344,3 +345,15 @@ func Run(opts *Options, version string, revision string) {
 		}
 	}
 }
+
+
+func Init() {
+	tui.InitTuiLight()
+	tui.InitTui()
+	InitConstants()
+	InitOptions()
+	InitPattern()
+	InitAnsi()
+	InitTerminal()
+}
+

@@ -741,7 +741,7 @@ const (
 	escapedPlus  = 2
 )
 
-func init() {
+func InitOptions() {
 	// Backreferences are not supported.
 	// "~!@#$%^&*;/|".each_char.map { |c| Regexp.escape(c) }.map { |c| "#{c}[^#{c}]*#{c}" }.join('|')
 	executeRegexp = regexp.MustCompile(

@@ -492,7 +492,7 @@ func errorExit(message string) {
 	os.Exit(2)
 }
 
-func init() {
+func InitTui() {
 	Default16 = &ColorTheme{
 		Colored:      true,
 		Input:        ColorAttr{colDefault, AttrUndefined},
